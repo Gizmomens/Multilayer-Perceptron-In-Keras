@@ -48,7 +48,6 @@ scaler = MinMaxScaler(feature_range=(-1,1))
 scaled_train_samples = (scaler.fit_transform(train_samples))
 
 #shuffle the rows/samples and the labels randomly 
-# corresponding labels will still match!!! )
 scaled_train_samples, train_labels = shuffle(scaled_train_samples, train_labels, random_state=0)
 
 
